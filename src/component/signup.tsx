@@ -8,7 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
 function Signup() {
-  const [count, setCount] = useState(0);
+
 
   return (
     <>
