@@ -1,0 +1,369 @@
+*{
+    font-family: poppins;
+}
+.signupbody {
+    background-image: url('https://img.freepik.com/free-photo/desk-workspace-with-various-elements_23-2148043196.jpg?t=st=1731415009~exp=1731418609~hmac=843f2be9ec28143e8777a659caf4fdd43d4951619f75dfbd9f3a07dbcd6d67a4&w=996');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.signuplogo2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 5vh;
+}
+
+.signuplogo2 .log {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.signuplogo2 p {
+    margin: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signuppage {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    max-width: 589px;
+    margin: auto 0;
+    padding: 45px;
+    border-radius: 16px 0 0 16px;
+    background: rgba(255, 255, 255, 0.8); /* Add some transparency to contrast with the background */
+    box-shadow: -2px -4px 15px #353e5b;
+    opacity: 1;
+}
+
+.frame {
+    width: 100%;
+    height: auto;
+}
+
+.signuplogo {
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #353e5b;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #353e5b;
+    margin-bottom: 20px;
+}
+
+.signupf {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.signupf .formparts {
+    display: flex;
+    flex-direction: column;
+}
+
+.signupf label {
+    font-family: inherit;
+    color: #353e5b;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5px;
+}
+
+.signupf input {
+    background: none;
+    border: 1.5px solid #353e5b;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+}
+
+.password-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+input[type="text"] {
+    padding-right: 2rem;
+    font-size: 1rem;
+    border: 1px solid #353e5b;
+    border-radius: 4px;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #353e5b;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #353e5b;
+}
+
+.terms p {
+    margin: 0;
+}
+
+.terms h4 {
+    margin: 8px;
+    font-weight: normal;
+}
+
+.signbtn {
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 15px;
+    background: #353e5b;
+    border-radius: 10px;
+    color: white;
+}
+
+.seperationtxt {
+    font-size: 14px;
+    margin: 8px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.subsignup {
+    display: flex;
+    gap: 2em;
+    justify-content: space-evenly;
+}
+
+.google, .apple {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 5px;
+    gap: 16px;
+    border-radius: 5px;
+    border: 1.5px solid #353e5b;
+    font-size: 14px;
+}
+
+.google p, .apple p {
+    font-size: 18px;
+}
+
+.lastlne {
+    font-size: 14px;
+    margin: 15px;
+   
+}
+
+.tologin {
+    font-family: Poppins, sans-serif;
+    color: #353e5b;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+}
+
+@media (max-width: 658px) {
+    .signupbody {
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .signuppage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .frame {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .signuplogo {
+        margin-bottom: 10px;
+    }
+
+    .content h1 {
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #353e5b;
+        margin-bottom: 5px;
+    }
+
+    .content p {
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #353e5b;
+        margin-bottom: 20px;
+    }
+
+    .signupf {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 20px;
+        width: 350px; /* Ensure it's fully responsive */
+    }
+
+
+
+    label {
+        font-family: inherit;
+        color: #353e5b;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5px;
+    }
+
+    .password-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 1rem;
+        border: 1px solid #353e5b;
+        border-radius: 4px;
+        padding: 8px;
+    }
+
+    .eye-icon {
+        position: absolute;
+        top: 50%;
+        right: 0.75rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #353e5b;
+    }
+
+    .terms {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #353e5b;
+    }
+
+    .terms p {
+        margin: 0;
+    }
+
+    .terms h4 {
+        margin: 8px;
+        font-weight: normal;
+    }
+
+    .signbtn {
+        font-family: Poppins, sans-serif;
+        width: 100%;
+        height: 40px;
+        padding: 8px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 15px;
+        background: #353e5b;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .seperationtxt {
+        font-size: 14px;
+        margin: 8px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .subsignup {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-evenly;
+        width: 100%; /* Ensure the container is fully responsive */
+    }
+
+    .google, .apple {
+        width: 100%;
+        padding: 8px;
+        gap: 16px;
+        border-radius: 10px;
+        border: 1.5px solid #353e5b;
+        font-size: 16px;
+    }
+
+    .google p, .apple p {
+        font-size: 18px;
+    }
+
+    .lastlne {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .tologin {
+        font-family: Poppins, sans-serif;
+        color: #353e5b;
+        font-weight: 700;
+    }
+
+    .signuplogo2 {
+        display: none;
+    }
+}

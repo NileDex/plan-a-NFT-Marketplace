@@ -1,0 +1,265 @@
+.navbar {
+  margin: 0;
+  display: flex;
+  padding: 16px 120px;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 102px;
+  height: 25px;
+}
+
+.button {
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  gap: 8px;
+}
+
+.signupbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centers text horizontally */
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+  border: 1px solid black;
+  color: white;
+  border-radius: 8px;
+  background: #353f5b;
+  border: none;
+}
+
+.loginbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centers text horizontally */
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+  border: 1px solid black;
+  color: white;
+  border-radius: 8px;
+  background: #353f5b;
+  border: none;
+
+}
+
+.loginbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+  border: 1px solid black;
+  color: white;
+  background: #353f5b;
+  border-radius: 4px;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+  border-radius: 8px;
+  border: none;
+}
+
+.loginbtn:hover {
+  width: 180px;
+  height: 30px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.socials p {
+  width: 30px;
+  padding: 5px;
+  transition: all 0.3s ease-out;
+  background: transparent;
+  color: #353f5b;
+  text-align: center;
+
+}
+
+.socials p:hover {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #353f5b;
+  color: white;
+  border: none;
+  border-radius: 13px;
+}
+
+.launch {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.abttext {
+  text-align: center;
+}
+
+.abttext h1 {
+  font-family: poppins;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: poppins;
+  font-weight: 800;
+  font-size: 40px;
+  color: #353f5b;
+}
+
+.footer {
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #353f5b;
+  /* Dark background color */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+}
+
+.ftr {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.footerlogo {
+  filter: drop-shadow(0px 0px 10px white);
+}
+
+.comhero {
+  font-family: poppins;
+  font-size: 12px;
+}
+
+.comhero h3 {
+  font-size: 15px;
+  font-weight: 800;
+  margin: 10px;
+}
+
+.mobileButton {
+  display: none; /* Hidden by default */
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 300px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modalLinks a {
+  display: block;
+  margin: 10px 0;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Show the button on screens smaller than 768px */
+/* Style the mobileContainer for mobile view */
+@media (max-width: 658px) {
+  .mobileContainer {
+    display: flex;
+    justify-content: space-between; /* Evenly space items */
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction:row; /* Stack elements vertically */
+    align-items: center;
+    padding: 16px;
+  
+    margin: 5px;
+  }
+
+  .logo {
+    width: 80px;
+    height: auto;
+    animation: slideIn 1s ease-out forwards; /* Applies animation */
+  }
+
+  .signupbtn, .loginbtn {
+    display: none; /* Hide signup and login buttons on mobile */
+  }
+
+  .mobileButton {
+    display: flex;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #353f5b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+
+  
+  /* Keyframes for the sliding animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-30px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+

@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  background-color: #fefeff;
+}
+
+
+
+/* styles.css */
+
+/* Light Mode Variables */
+:root {
+  --background-color: #ffffff;
+  --primary-text-color: #000000;
+  /* Primary text remains black */
+  --secondary-text-color: #333333;
+  /* Secondary text is slightly darker */
+}
+
+/* Dark Mode Variables */
+[data-theme='dark'] {
+  --background-color: #121212;
+  --primary-text-color: #ffffff;
+  /* Light gray for readability */
+  --secondary-text-color: #000000;
+  /* Slightly darker gray for contrast */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  /* Only primary text uses this */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Example Usage: Customizing Text Colors */
+h1 {
+  color: var(--primary-text-color);
+  /* Primary text color for headers */
+}
+
+p {
+  color: var(--secondary-text-color);
+  /* Secondary text color for paragraphs */
+}
+
+.aboutplana {
+  color: var(--primary-text-color);
+}
+
+/* Toggle Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #333;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.herobody {
+  background-image:
+    linear-gradient(to bottom right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8)),
+    url('https://img.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_84443-23990.jpg?t=st=1731333313~exp=1731336913~hmac=8d0448330d9e97746b0c148f62a2b667c00b49a80ffa2ae6c44e92be14c9aeca&w=1380');
+  background-size: cover;
+  background-position: center;
+  width: 90vw;
+  max-width: 1050px;
+  height: 50vh;
+  max-height: 484px;
+  display: flex;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.herotext {
+  width: 658;
+  height: 364;
+  gap: 24px;
+}
+
+.goaltext {
+  width: 591px;
+  height: 180px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+
+}
+
+.subtext {
+  width: 500px;
+  height: 70px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 20px 0;
+
+}
+
+.nft {
+  width: 492px;
+  height: 464px;
+  gap: 0px;
+  opacity: 0px;
+  margin: 0;
+}
+
+.nftimg {
+
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  transition: transform 0.3s ease-out;
+  overflow: hidden;
+  border-radius: 13px;
+}
+
+.nftimg:hover {
+  transform: scale(1.1) translateX(+10px) rotate(+2deg);
+  box-shadow: 7px 8px 15px grey;
+
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px grey;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  /* Positions the dropdown below the button */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  padding: 8px 0;
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px grey;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.scroller-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.scroller-content {
+  display: flex;
+  width: calc(1000%);
+  /* Double width for seamless scroll */
+  animation: scroll 50s linear infinite;
+}
+
+.nft-image:hover {
+  border-color: #353f5b;
+  filter: drop-shadow(0px 0px 10px #353f5b);
+}
+
+.nft-image {
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+
+
+.about {
+  display: flex;
+  padding: 40px;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.image-stack {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.borderless {
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  position: absolute;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+/* Initial stacked positions */
+.bottom-image {
+  transform: translate(-15px, 15px);
+  z-index: 1;
+}
+
+.middle-image {
+  transform: translate(0, -5px);
+  z-index: 2;
+}
+
+.top-image {
+  transform: translate(15px, -15px);
+  z-index: 3;
+}
+
+/* Swap positions on hover */
+.image-stack:hover .bottom-image {
+  transform: translate(15px, -15px);
+  z-index: 3;
+}
+
+.image-stack:hover .middle-image {
+  transform: translate(-15px, 15px);
+  z-index: 1;
+}
+
+.image-stack:hover .top-image {
+  transform: translate(0, -5px);
+  z-index: 2;
+}
+
+/* Glow effect beneath images */
+.glow {
+  position: absolute;
+  bottom: -20px;
+  width: 80%;
+  height: 20px;
+  background: radial-gradient(circle, rgba(255, 255, 0, 0.6), transparent);
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.abt {
+  margin: 20px;
+  width: 50%;
+}
+
+.aboutplana {
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+
+  }
+}
+
+
+@media (max-width: 658px) {
+  .switch {
+    display: none;
+  }
+
+  .herobody {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .herotext {
+    width: 658;
+    height: auto;
+  }
+
+  .goaltext {
+    font-size: 38px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    text-decoration-skip-ink: auto;
+  }
+
+  .subtext {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 658px) {
+  .nft {
+    width: 90vw;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .nftimg {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin-bottom: 20px;
+    border-radius: 13px;
+  }
+
+  .nftimg:hover {
+    transform: scale(1.1) translateX(+10px) rotate(+2deg);
+    box-shadow: 7px 8px 15px grey;
+
+  }
+
+  .scroller-wrapper {
+    margin-top: 30vh;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .image-stack{
+    width: 100%;
+    height: 400px;
+  }
+  .abt{
+    width: 100%;
+    margin: 5px 0;
+    text-align: justify;
+    margin-top: 15px;
+  }
+}

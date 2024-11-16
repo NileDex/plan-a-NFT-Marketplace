@@ -1,0 +1,73 @@
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);  /* Light frosted background */
+    backdrop-filter: blur(3px);  /* Glassmorphism effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.modal {
+    background-color: rgb(255, 255, 255);  /* Slightly transparent modal */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+.modal-buttons{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    border: 1px solid black;
+    color: white;
+    border-radius: 8px;
+    background: #353f5b;
+    border: none;
+    margin-top: 20px;
+}
+.modal-buttons h3{
+    text-decoration: none;
+    color: inherit;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+    font-weight: 800;
+    
+}
+@media only screen and (min-width: 1024px) {
+    .modal-overlay{
+        display: none;
+    }
+}
