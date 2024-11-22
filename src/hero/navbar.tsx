@@ -15,7 +15,7 @@ const Navbar = () => {
           <img src={herologo} className="logo" alt="mainlogo" />
         </div>
         <div className="button">
-          <ThemeToggle />
+    
           <div className="signupbtn">
             <Link to="/signup">Signup</Link>
           </div>
