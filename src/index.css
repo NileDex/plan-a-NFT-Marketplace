@@ -1,55 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
+
+
 body {
   margin: 0;
-  background-color: #fefeff;
+  background-color: rgb(255, 255, 255);
+  color: white;
 }
 
-
-
-/* styles.css */
-
-/* Light Mode Variables */
-:root {
-  --background-color: #ffffff;
-  --primary-text-color: #000000;
-  /* Primary text remains black */
-  --secondary-text-color: #333333;
-  /* Secondary text is slightly darker */
-}
-
-/* Dark Mode Variables */
-[data-theme='dark'] {
-  --background-color: #121212;
-  --primary-text-color: #ffffff;
-  /* Light gray for readability */
-  --secondary-text-color: #000000;
-  /* Slightly darker gray for contrast */
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--primary-text-color);
-  /* Only primary text uses this */
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Example Usage: Customizing Text Colors */
-h1 {
-  color: var(--primary-text-color);
-  /* Primary text color for headers */
-}
-
-p {
-  color: var(--secondary-text-color);
-  /* Secondary text color for paragraphs */
-}
-
-.aboutplana {
-  color: var(--primary-text-color);
-}
-
-/* Toggle Switch Styles */
 .switch {
   position: relative;
   display: inline-block;
@@ -101,41 +61,37 @@ input:checked+.slider:before {
     url('https://img.freepik.com/free-vector/abstract-seamless-geometric-shape-lines-pattern-design-background_84443-23990.jpg?t=st=1731333313~exp=1731336913~hmac=8d0448330d9e97746b0c148f62a2b667c00b49a80ffa2ae6c44e92be14c9aeca&w=1380');
   background-size: cover;
   background-position: center;
-  width: 90vw;
-  max-width: 1050px;
-  height: 50vh;
+  width: 100%;
+  height: auto;
   max-height: 484px;
   display: flex;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 30px 0;
   box-sizing: border-box;
-  padding: 0;
+  padding: 8px;
 }
 
 .herotext {
-  width: 658;
-  height: 364;
-  gap: 24px;
+  width: 50%;
+  height: auto;
 }
 
 .goaltext {
-  width: 591px;
-  height: 180px;
-  gap: 0px;
-  opacity: 0px;
+  width: 80%;
+  height: auto;
   font-family: Poppins;
-  font-size: 52px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 0.03em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
-
 }
 
 .subtext {
-  width: 500px;
+  width: 80%;
   height: 70px;
   gap: 0px;
   opacity: 0px;
@@ -151,24 +107,27 @@ input:checked+.slider:before {
 
 .nft {
   width: 492px;
-  height: 464px;
-  gap: 0px;
-  opacity: 0px;
-  margin: 0;
+  height: 20%;
 }
 
 .nftimg {
-
+  max-width: 492px;
+  width: auto;
+  height: 280px;
   background-position: center;
   background-size: cover;
-  height: 50vh;
-  transition: transform 0.3s ease-out;
+  height: auto;
+  transition: transform 0.7s ease-out;
   overflow: hidden;
   border-radius: 13px;
+  margin-right: 30px;
 }
 
 .nftimg:hover {
-  transform: scale(1.1) translateX(+10px) rotate(+2deg);
+
+  max-width: 492px;
+  height: auto;
+  transform: scale(1.1) translateX(-15px) rotate(+5deg);
   box-shadow: 7px 8px 15px grey;
 
 }
@@ -212,8 +171,8 @@ input:checked+.slider:before {
   display: flex;
   overflow: hidden;
   width: 100%;
-  height: 150px;
-  margin: 20px 0;
+  height: 200px;
+  margin: 5px 0;
   position: relative;
 }
 
@@ -223,19 +182,6 @@ input:checked+.slider:before {
   /* Double width for seamless scroll */
   animation: scroll 50s linear infinite;
 }
-
-.nft-image:hover {
-  border-color: #353f5b;
-  filter: drop-shadow(0px 0px 10px #353f5b);
-}
-
-.nft-image {
-  width: 150px;
-  height: auto;
-  margin-right: 10px;
-  border-radius: 8px;
-}
-
 
 
 .about {
@@ -259,7 +205,8 @@ input:checked+.slider:before {
   height: 100%;
   border-radius: 13px;
   position: absolute;
-  transition: transform 0.3s ease, z-index 0.3s ease;
+  transition: transform 0.8s ease, z-index 0.8s ease;
+  margin-bottom: 18px;
 }
 
 /* Initial stacked positions */
@@ -294,17 +241,6 @@ input:checked+.slider:before {
   z-index: 2;
 }
 
-/* Glow effect beneath images */
-.glow {
-  position: absolute;
-  bottom: -20px;
-  width: 80%;
-  height: 20px;
-  background: radial-gradient(circle, rgba(255, 255, 0, 0.6), transparent);
-  filter: blur(20px);
-  z-index: 0;
-}
-
 .abt {
   margin: 20px;
   width: 50%;
@@ -326,8 +262,11 @@ input:checked+.slider:before {
   }
 }
 
-
 @media (max-width: 658px) {
+  .body {
+    margin: 0; /* Removed incorrect '0s' */
+  }
+
   .switch {
     display: none;
   }
@@ -339,68 +278,100 @@ input:checked+.slider:before {
   }
 
   .herotext {
-    width: 658;
+    width: 100%;
     height: auto;
   }
 
   .goaltext {
     font-size: 38px;
     width: 100%;
-    max-width: 300px;
     height: auto;
     line-height: 1.2;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     text-align: left;
     text-decoration-skip-ink: auto;
+    margin: 0; /* Removed extra margin if applied by default */
   }
 
   .subtext {
     width: 100%;
     height: auto;
-    margin: 0;
+    margin: 0; /* Removed extra margin */
   }
 
-}
-
-@media (max-width: 658px) {
   .nft {
-    width: 90vw;
+
     max-width: 100%;
     height: auto;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container without additional margins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .nftimg {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
     height: auto;
-    max-height: 300px;
-    margin-bottom: 20px;
+    max-height: 400px;
     border-radius: 13px;
+    transition: transform 0.7s ease-in;
+    margin: 0; /* Removed redundant bottom margin */
   }
 
   .nftimg:hover {
+    width: 95%;
     transform: scale(1.1) translateX(+10px) rotate(+2deg);
     box-shadow: 7px 8px 15px grey;
-
   }
 
   .scroller-wrapper {
-    margin-top: 30vh;
+    margin-top: 8vh;
   }
-  .about{
+
+  .about {
     display: flex;
     flex-direction: column;
+    margin: 0; /* Removed default margins if any */
   }
-  .image-stack{
+
+  .image-stack {
     width: 100%;
     height: 400px;
+    margin: 0; /* Ensuring no extra space around the stack */
   }
-  .abt{
+
+  .abt {
     width: 100%;
-    margin: 5px 0;
     text-align: justify;
-    margin-top: 15px;
+    margin: 5px 0 15px 0; /* Combined margins for clarity */
+  }
+}
+@media (max-width: 812px) {
+  .herobody {
+    height: auto;
+    padding: 10px;
+    margin: 0 0 30px 0;
+  }
+  .nft {
+    width: 492px;
+    height: 20%;
+  }
+  .nftimg {
+    width: 95%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 13px;
+    transition: transform 0.7s ease-in;
+    margin: 0; /* Removed redundant bottom margin */
+  }
+  .goaltext {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
   }
 }

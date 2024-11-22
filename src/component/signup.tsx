@@ -28,16 +28,16 @@ function Signup() {
             </div>
             <div className="content">
               <h1>Welcome to MyPlanA</h1>
-              <p>Please fill in your details below to create your account</p>
+              <p >Please fill in your details below to create your account</p>
             </div>
             <form className="signupf">
               <div className="formparts">
                 <label>First Name </label>
-                <input type="text" name="firstname" placeholder="First Name" />
+                <input type="text" name="firstname" />
               </div>
               <div>
                 <label>Email</label>
-                <input type="text" name="email" placeholder="Email" />
+                <input type="text" name="email"  />
               </div>
               <div className="password-field">
                 <label>Password</label>

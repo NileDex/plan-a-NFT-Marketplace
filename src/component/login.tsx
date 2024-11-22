@@ -31,12 +31,12 @@ function Login() {
             <form className="signupf">
               <div>
                 <label>Email Address</label>
-                <input type="text" name="email" placeholder="Email" />
+                <input type="text" name="email" />
               </div>
               <div className="password-field">
                 <label>Password</label>
                 <div className="input-wrapper">
-                  <input type="text" name="password" placeholder="Password" />
+                  <input type="text" name="password"  />
                   <IoEyeOutline className="eye-icon" />
                 </div>
               </div>
@@ -45,9 +45,9 @@ function Login() {
               <p>
                 <MdCheckBoxOutlineBlank />
               </p>
-              <h4>agree to our Terms of Service and Privacy Policy.</h4>
+              <h5>agree to our Terms of Service and Privacy Policy.</h5>
             </div>
-            <button className="signbtn">Login  <Link to="/goal">Go Back</Link></button>
+          <button className="signbtn">Login  <Link to="/goal">{'>>>'}</Link></button>
             <p className="seperationtxt">or</p>
             <div className="subsignup">
               <button className="google">

@@ -7,10 +7,11 @@ import { FaDiscord } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithubAlt } from "react-icons/fa";
 import { RxDropdownMenu } from "react-icons/rx";
-import ThemeToggle from "./ThemeToggle";
-import Modal from "./Modal"; // Importing the Modal component
+import Modal from "./Modal";
+
 
 function Hero() {
+  
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); // For controlling modal visibility
 
@@ -35,9 +36,8 @@ function Hero() {
             <img src={herologo} className="logo" alt="mainlogo" />
           </div>
           <div className="button">
-            <ThemeToggle />
             <div className="signupbtn">
-              <Link to="/signup">Signup</Link>
+              <p><Link to="/signup">Signup</Link></p>
             </div>
             <div className="loginbtn">
               <Link to="/login">Login</Link>
@@ -47,7 +47,7 @@ function Hero() {
             </div>
             {/* Mobile-only button */}
             <div>
-              <button
+              <button name="mobilebutton"
                 className="mobileButton"
                 onClick={() => setIsModalOpen(true)}
               >
@@ -162,7 +162,7 @@ function Hero() {
               src="https://cdn-lambda.kwork.com/files/portfolio/t0/22/c720662d0246d745f501d6ba4d7dfbab00e833be-1651180922.webp"
               alt="aboutimg3"
             />
-            <div className="glow"></div>
+            
           </div>
           <div className="abt">
             <p className="aboutplana">
@@ -231,7 +231,7 @@ function Hero() {
             </ul>
           </div>
         </div>
-        © 2024 Your Company Name. All rights reserved.
+        © 2024 Made with. 📚 Plan A. All rights reserved.
       </footer>
     </>
   );

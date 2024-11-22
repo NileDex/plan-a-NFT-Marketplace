@@ -1,3 +1,4 @@
+
 .navbar {
   margin: 0;
   display: flex;
@@ -14,6 +15,7 @@
 }
 
 .button {
+  text-decoration: none;
   text-align: center;
   font-family: "Poppins", serif;
   font-weight: 700;
@@ -26,18 +28,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Centers text horizontally */
   width: 150px;
   height: 30px;
   font-size: 12px;
   border: 1px solid black;
-  color: white;
+  
   border-radius: 8px;
   background: #353f5b;
   border: none;
 }
-
+.signupbtn,.loginbtn, a {
+  text-decoration: none;
+  color: white;
+}
 .loginbtn {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,12 +159,20 @@
 .comhero {
   font-family: poppins;
   font-size: 12px;
+  text-align: left;
 }
+.comhero ul{
+  list-style-type: none; 
+  margin-bottom: 20px;
+  
+}
+
 
 .comhero h3 {
   font-size: 15px;
   font-weight: 800;
-  margin: 10px;
+  margin-bottom: 10px;
+  text-align: start;
 }
 
 .mobileButton {
@@ -245,6 +258,7 @@
     border-radius: 5px;
   }
 
+
   
   /* Keyframes for the sliding animation */
   @keyframes slideIn {
@@ -260,6 +274,13 @@
     100% {
       transform: translateX(0);
     }
+  }
+  .abttext h1 {
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 29px;
+    text-align: center;
+    margin: 10px;
   }
 }
 

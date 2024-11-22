@@ -1,0 +1,60 @@
+# Node.js
+node_modules/
+dist/
+.env
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env.local
+.env.*.local
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+
+# Operating System Files
+Thumbs.db
+.DS_Store
+
+# Dependency directories
+node_modules/
+
+# Build output
+build/
+dist/
+out/
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# Coverage reports
+coverage/
+
+# Testing and temp files
+*.seed
+*.pid
+*.pid.lock
+*.tsbuildinfo
+
+# Misc
+*.swp
+*.bak
+*.tmp
+*.orig
+*.rej
+*.sublime-project
+*.sublime-workspace
+*.iml
