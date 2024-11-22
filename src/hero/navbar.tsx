@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import herologo from "../assets/herologo.png";
 import { PiRocketLaunchLight } from "react-icons/pi";
 import { RxDropdownMenu } from "react-icons/rx";
-import ThemeToggle from "./ThemeToggle";
 import Modal from "./Modal"; // Importing the Modal component
 
 const Navbar = () => {
